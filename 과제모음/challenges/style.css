@@ -1,11 +1,52 @@
 /* 초기화 */
-html, body, div, p {
+html, body, div, p, h2, dl, dt, dd{
     margin: 0;
     padding: 0;
     font: inherit;
     font-size: inherit;
 }
 
-.main{
+main {
     background-image: url(./images/bg.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    position: relative;
 }
+
+article.animal_article{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 200px;
+    height: auto;
+}
+
+.animal_article img{
+    position: relative;
+    right: 11px;
+    top: 4px;
+    width: 100%;
+}
+
+.top{
+    background-image: url(./images/green.png);
+    height: 50px;
+}
+dl{
+    background-color:rgb(147, 86, 45);
+    padding: 3px 15px 15px ;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.5rem;
+    box-shadow: 0 10px 0 -4px rgb(100, 46, 2);
+
+}
+dt{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 7px;
+}
+
