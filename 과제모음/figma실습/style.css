@@ -1,0 +1,56 @@
+@import url('https://webfontworld.github.io/goodchoice/Jalnan.css');
+
+html,body,
+div,h1,
+h2,h3,h4,h5,
+h6,header,
+footer,article,
+aside,figure,
+section,ol,
+ul,li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: inherit;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  max-width: 1920px;
+  height: 101px;
+}
+
+nav.navbar{
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    padding: 38px 0 39px 0;
+
+} 
+
+nav.navbar li {
+  float: left;
+  margin-left: 30px;
+}
+
+h1 {
+  position: absolute;
+  left: 18.07%;
+  right: 75.1%;
+  top: 23.76%;
+  bottom: 20.79%;
+
+font-family: 'Jalnan OTF';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
