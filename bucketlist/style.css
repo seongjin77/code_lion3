@@ -7,6 +7,15 @@ body{
 
 section{
     margin: 0 auto;
-    width: 500px;
-    
+    width: 400px;
+    height: 400px;
+    background-color: rgb(224, 223, 223);
+    border-radius: 17px;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: #fff;
+    padding-bottom: 1px;
+    margin: 55px 0;
 }
