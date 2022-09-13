@@ -156,6 +156,7 @@ input {
     margin: 0 10px;
     position: relative;
     top: 96px;
+    cursor: pointer;
 }
 
 #result .btn-share {
@@ -170,6 +171,7 @@ input {
     border-radius: 56px;
     position: relative;
     top: 91px;
+    cursor: pointer;
 }
 /* 하단부분 */
 
@@ -192,7 +194,7 @@ input {
 /* 모달창 */
 .cont-modal {
     /* visibility: hidden; */
-    display: none;
+   display: none;
     width: 800px;
     height: 800px;
     box-sizing: border-box;
@@ -234,4 +236,10 @@ input {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+}
+
+/* 토글부분 */
+.togle-btn{
+    display: block;
+
 }

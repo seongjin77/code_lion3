@@ -5,11 +5,7 @@ body {
     background-color: lightgray;
 }
 
-/* body와 마진병합현상 제거 */
-/* section::after{
-    content: "";
-    display: table;
-} */
+
 
 section {
     margin: 0 auto;
@@ -43,6 +39,7 @@ h1 {
    margin: 20px auto;
     width: 330px;
     height: 250px;
+    /* border: 1px solid black; */
 }
 /* 자식인 p와 마진병합 현상 제거 */
 .container::after,
@@ -55,7 +52,7 @@ h1 {
 .container p {
    border: 3px solid gray;
    border-radius: 5px;
-    margin: 14px 0;
+    margin: 12px 0;
     padding: 4px;
    background-color: rgb(236, 236, 236);
 }
