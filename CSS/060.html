@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <style>
+        .foo:first-child{
+            color: red;
+        }
+        /* foo 클래스를 가진 요소중에 제일 첫번째를 선택  */
+        /* 주의사항!!!!! 만약 가상 클래스 선택자 앞에 다른 요소가 있다면, 즉 같은 클래스로만 이루어져 있지 않다면 작동하지 않는다. */
+    </style>
+</head>
+<body>
+    <h1 class="gd">gd</h1>
+    <li class="foo">1</li>
+    <li class="foo">2</li>
+    <li class="foo">3</li>
+    <li class="foo">4</li>
+    <li class="foo">5</li>
+</body>
+</html>

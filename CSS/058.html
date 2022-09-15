@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            a[class~="weniv"] {
+                color: black;
+            }
+
+            a[href*="weniv"] {
+                color: black;
+            }
+
+            /* 
+            ~= 는 단어를 기준으로 *= 는 문자열을 기준으로 판단을 하게 됩니다. 예를 들어서 위와 같은 상황에서 paullabs 를 어떻게 인식할까요?
+~= 은 단어를 기준으로 paullab 와 paullabs 를 다르다고 인식하고 선택을 못하게 되고 *= 은 문자열을 기준으로 paullabs  안에 paullab 가 포함되기 때문에 선택을 합니다.
+            
+            */
+        </style>
+    </head>
+    <body></body>
+</html>
