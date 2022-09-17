@@ -1,3 +1,6 @@
+*{
+	border: 1px solid white;
+}
 :root {
     font-family: 'Montserrat', sans-serif;
 	/*
@@ -41,13 +44,35 @@ h1.title{
 	color: white;
 	vertical-align:top;
 	line-height: 1.2;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column
+
 }
 
-.title-bar{
+h1 span{
+	position: relative;
+}
+
+h1 span::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 0.5em;
+	background-color: #d9501a;
+	z-index: -1;
+}
+
+.h1-box::after{
+	content: "";
 	width: 50px;
 	height: 1px;
 	background-color:  #a887e1;
 }
+
+
 
 .title-txt{
 	font-size: 14px;
