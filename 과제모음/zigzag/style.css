@@ -3,16 +3,18 @@
 }
 :root {
     font-family: 'Montserrat', sans-serif;
+	color: white;
 	/*
 	font-weight: 500;
 	font-weight: 700;
 	*/
 }
-body,h1,h2{
+body,h1,h2, ol, ul, li,p{
 	margin: 0;
 	padding: 0;
 	font-size: inherit;
 	font-style: inherit;
+	list-style: none;
 }
 
 body{
@@ -35,18 +37,20 @@ body{
 .site-header{
 	display: flex;
 	align-items: center;
+	margin-bottom: 100px;
 
 }
 
 
 h1.title{
+	/* 위에 텍스트 붙이는거 잘 모름 */
 	font-size: 40px;
 	color: white;
-	vertical-align:top;
+	padding-right: 25px;
 	line-height: 1.2;
-	box-sizing: border-box;
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
+	align-items: flex-start;
 
 }
 
@@ -65,20 +69,56 @@ h1 span::after{
 	z-index: -1;
 }
 
-.h1-box::after{
-	content: "";
-	width: 50px;
-	height: 1px;
-	background-color:  #a887e1;
-}
-
-
-
 .title-txt{
 	font-size: 14px;
 	color: #a887e1;
-	margin: 30px;
-	width: 450px;
-	
-	
+	width: 550px;
+	display:flex;
+	align-items: center;
 }
+
+.title-txt::before{
+	content: "";
+	width: 250px;
+	border: 1px solid #bd8fe8;
+	vertical-align:center;
+	margin-right: 25px;
+}
+
+/******** header끝 ********/
+
+section {
+	display:flex;
+
+}
+
+.img-box{
+	width: 26%;
+	position: relative;
+
+}
+
+h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.img-box img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	opacity: 0.5;
+}
+
+.txt-box{
+	width: 74%;
+	background-color: #fff;
+	color: #000;
+	padding: 20px;
+}
+
