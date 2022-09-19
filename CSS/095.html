@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                    ".      .       time"
+                    "header header header"
+                    "aside main aside1"
+                    ".      .       ."
+                    "footer footer footer";
+            }
+            time {
+                grid-area: time;
+                background-color: yellow;
+            }
+            header {
+                grid-area: header;
+                background-color: pink;
+            }
+            main {
+                grid-area: main;
+                background-color: royalblue;
+            }
+            aside {
+                grid-area: aside;
+                background-color: lightgreen;
+            }
+            .aside1 {
+                grid-area: aside1;
+                background-color: lightgreen;
+            }
+            footer {
+                grid-area: footer;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <time>time</time>
+        <header>header</header>
+        <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+            repellat earum iure id natus, consectetur, aut a adipisci, suscipit
+            dolore in quam commodi recusandae magni excepturi sapiente quasi
+            optio accusantium?
+        </main>
+        <aside>aside</aside>
+        <aside class="aside1">aside</aside>
+        <footer>footer</footer>
+    </body>
+</html>
