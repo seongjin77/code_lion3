@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <style>
+            .container {
+                display: flex;
+                /* height: 600px; */
+            }
+            .item {
+                border: 1px solid #000;
+            }
+            /* 숫자는 크기에 따라서만 정렬합니다. 순서가 아니다. */
+            /* 크기가 큰 것만 뒤로 가는 것입니다. */
+
+            .item:nth-child(1) {
+                /* align-self: center; */
+                order: 1;
+            }
+            .item:nth-child(2) {
+                /* align-self: center; */
+                order: 2;
+            }
+            .item:nth-child(3) {
+                /* align-self: center; */
+                order: 3;
+            }
+            .item:nth-child(4) {
+                /* align-self: center; */
+                order: 4;
+            }
+            .item:nth-child(5) {
+                /* align-self: center; */
+                order: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 예시
+            <div class="card">
+                <h3>Another title</h3>
+                <div class="date">6 Nov 2017</div>
+                <p>This is the content of my news item. Very newsworthy.</p>
+            </div> 
+    -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </body>
+</html>
