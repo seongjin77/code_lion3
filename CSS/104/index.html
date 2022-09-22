@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt-hide {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+        }
+        .labl-hold::before{
+            display:inline-block; /* 넓이 높이 주기 위해서 */
+            content: "";
+            width: 22px;
+            height: 22px;
+            vertical-align: -5px;
+            background-image:url(./images/icon_check_empty.png);
+        }
+
+        .inp-hold:checked + .labl-hold::before{
+            background-image:url(./images/icon_check.png);
+            /* checked되어있는 체크박스 + 레이블의 가상요소 상태를 선택  */
+        }
+
+        .inp-hold:focus + .labl-hold::before {
+            outline: 2px solid black; /* 레이아웃에 영향을 주지 않음 */
+            outline-offset: 5px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="inpHold" class="inp-hold txt-hide">
+    <label for="inpHold" class="labl-hold">선택해주세요</label>
+</body>
+</html>
