@@ -10,9 +10,21 @@
                 width: 100vw;
                 height: 100vh;
             }
-            .jeju {
-                fill: red;
+
+            .four {
+                width: 100vw;
+                height: 100vh;
             }
+            /* 3번째에서만 작동하고 4번째 object 태그에서도 작동하게 하려면 안에 inline으로 넣어주어야 합니다 */
+            path:hover {
+                fill: red;
+                stroke: black;
+                stroke-width: 0.5;
+            }
+
+            /* .jeju {
+                fill: red;
+            } */
         </style>
     </head>
     <body>
@@ -153,5 +165,10 @@
                 />
             </g>
         </svg>
+        <object
+            class="four"
+            data="./southKoreaLow.svg"
+            type="image/svg+xml"
+        ></object>
     </body>
 </html>
