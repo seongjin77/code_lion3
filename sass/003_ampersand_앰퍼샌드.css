@@ -1,9 +1,0 @@
-.box {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  transition: all 0.5s;
-}
-.box:hover {
-  background-color: blue;
-}/*# sourceMappingURL=003_ampersand_앰퍼샌드.css.map */

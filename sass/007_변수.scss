@@ -54,3 +54,4 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700); //글자 굵기 리
 .test5 {
     font-weight: map-get($font-weights, "hello");
 }
+
