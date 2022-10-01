@@ -30,6 +30,7 @@
             console.dir(data2);
 
             // 초록색이었던 것으로 기억하는데
+            // 검은색 맞고, 저희 개발자들은 info를 안쓴다고 합니다.
             // console.info("hello world");
 
             console.group("one");
@@ -51,6 +52,15 @@
 
             console.warn("hello");
             console.warn("실행은 해줄게, 다만 경고문구는 읽어봐");
+
+            // 잊으셔도 괜찮습니다.
+            console.log("%chello world", "color:red;font-size:32px");
+            console.log(
+                "%chello world%chello",
+                "color:red;font-size:32px",
+                "color:blue;font-size:16px"
+            );
+            // https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
         </script>
     </body>
 </html>
