@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .lightcoral{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    점심 식단
+    <article id="container">
+        <ul>
+            <li>탕수육</li>
+            <li class="item-second">유산슬</li>
+            <li>짜장면</li>
+        </ul>
+    </article>
+
+    저녁 식단
+    <article>
+        <ul>
+            <li>된장국</li>
+            <li class="item-second">김치찌게</li>
+            <li>해장국</li>
+        </ul>
+    </article>
+
+    <div></div>
+
+    <button>빨강</button>
+    <button>노랑</button>
+    <button>초록</button>
+    <button>핑크</button>
+    <button>코랄</button>
+    <!-- <div class="div">div 입니다!</div>
+    <div class="div">div 입니다!</div>
+    <div class="div">div 입니다!</div>
+    <div class="div">div 입니다!</div>
+    <div class="div">div 입니다!</div> -->
+    <script>
+        //console.log(document.getElementById('div'));
+        //console.log(document.getElementsByTagName('div'));
+        //console.log(document.getElementsByClassName('div'));
+
+        console.log(document.getElementsByClassName('item-second')[0]);
+        const hi =document.getElementsByTagName('li');
+        console.log(hi[0]);
+
+        const btn = document.querySelectorAll('button');
+        const div = document.querySelector('div');
+        const colorBox = ['red', 'yellow', 'green', 'pink', 'lightcoral']
+        // function 색변경함수(color){
+        //     if(클래스가 없으면){
+
+        //     }
+        //     else if(클래스가 있으면){
+                
+        //     }
+        // }
+
+        btn.forEach((v,i)=>{
+            console.log(v,i);
+            v.addEventListener('click',()=>{
+               div.classList = 'div';
+               div.classList.add(`${colorBox[i]}`)
+            });
+        })
+
+        // btn[0].addEventListener('click',()=>{
+        //     div.classList = 'div'
+        //     div.classList.add('red');
+        // } )
+
+        // btn[1].addEventListener('click',()=>{
+        //     div.classList.toggle('yellow');
+        //     div.classList.remove('green', 'red');
+        // } )
+        // btn[2].addEventListener('click',()=>{
+        //     div.classList.toggle('green');
+        //     div.classList.remove('red','yellow');
+        // } )
+    </script>
+</body>
+</html>
