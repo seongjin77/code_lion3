@@ -32,3 +32,13 @@
 // console.log(func2({a: 20, b: 30, c: 10}));
 
 
+let arr = {
+  'a': 10,
+  'b': {
+    'c': 30
+  }
+}
+let arr2 = {...arr};
+
+console.log(arr2);
+

@@ -37,6 +37,7 @@
         Array.prototype.forEach.call(txts, (item) => {
             item.addEventListener('click', () => {
                 alert(event.target.textContent.slice(0, -2));
+                console.log(event.target);
             })
         })
 
@@ -45,7 +46,7 @@
                 const result = confirm('삭제 하시겠습니까?');
 
                 // 버블링 차단.
-                event.stopPropagation();
+                //event.stopPropagation();
                 if (result) {
                     item.parentElement.remove();
                 }
