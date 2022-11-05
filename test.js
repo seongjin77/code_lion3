@@ -1,44 +1,21 @@
-fetch('http://test.api.weniv.co.kr/mall')
-  .then((data) => data.json())
-  .then((data) => {
-    data.forEach(item => {
-        //console.log(item.productName);
-    })
-    return data;
-  })
-  .then((data) => {
-    console.log(data.filter((item) => item.price >= 10000));
-    return data;
-  })
-  .then((data)=> {
-    
-    data.forEach(item => {
-        const h2 = document.createElement('h2');
-        const p = document.createElement('p');
-        h2.innerText = item.productName;
-        p.innerText = item.price;
-        document.body.appendChild(h2);
-      document.body.appendChild(p);
-  })
-})
-//   .then((data) => {
-//     data.map((item) => {
-//       console.log(item);
-//       const h2 = document.createElement("h2");
-//       const p = document.createElement("p");
-//       h2.innerHTML = item.productName;
-//       p.innerHTML = item.price;
-//       document.body.appendChild(h2);
-//       document.body.appendChild(p);
-//     });
-//   })
-//  .catch((error) => document.write(error));
+let test = Array.from('하나둘셋');
 
+console.log(test);
 
-// 1. 추가 then을 사용하여 7개의 항목 productName만 출력해보세요.(console.log)
+let test2 = '하나둘셋';
 
-// 2. 추가 then을 사용하여 7개의 항목 중 price가 10000원 이상 되는 product를 출력하는 코드를 작성해주세요.(console.log)
+for(let i of test2){
+  console.log(i);
+}
 
-// 3. 추가 then을 사용하여 7개의 항목의 productName과 price를 각각 h2와 p태그로 생성하여(DOM) 화면에 출력해주세요.
+// 자바스크립트는 원시타입 or 객체타입으로 나뉜다.
 
-// 4. error 처리를 해주세요. 
+// string은 원시타입이다.
+// string은 유사배열객체다. string의 프로퍼티는 원시타입이므로 값을 변경할 수 없다.
+
+// 이해 안가는 점은 애초에 원시타입이 제외한 것은 다 객체 아닌가?
+// 그리고 객체면 값을 변경할 수 있는게 아닌가?
+
+let test3 = new String('하나');
+
+console.log(test3);
