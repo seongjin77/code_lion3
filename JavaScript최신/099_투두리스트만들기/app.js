@@ -3,7 +3,7 @@ const userTask = main.querySelector('header input');
 const addBtn = main.querySelector('header button');
 const listTodo = main.querySelector('.list_todo');
 
-// 할일 추가 이벤트
+// 0.할일 추가 이벤트
 addBtn.addEventListener('click', createListItem);
 
 // 경고 메세지 생성
@@ -36,7 +36,7 @@ if (tasks.length > 0) {
 }
 
 
-
+// 1.번
 function createListItem() {
     const inpVal = userTask.value;
 
@@ -65,7 +65,7 @@ function createListItem() {
     }
 }
 
-// 목록 요소를 생성합니다.
+// 2.번 목록 요소를 생성합니다.
 function genItem(val, complete) {
     const li = document.createElement('li');
     li.textContent = val;
@@ -100,7 +100,8 @@ function genItem(val, complete) {
         // 다운로드 버튼 노출 함수
         showDownload();
     })
-}
+}///////////////// genItem 목록 생성 함수끝///////////
+//////////////////////////////////////////////////
 
 // localStorage 에 할일 목록을 저장하는 함수
 function saveTasks() {
